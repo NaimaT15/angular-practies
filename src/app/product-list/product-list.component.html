@@ -1,4 +1,10 @@
+<img [src]="product.pImage">
 <p>Name: {{product.name}}</p>
 <p>price: {{product.price}}</p>
 <p>color: {{product.color}}</p>
 <p>discount: {{ getDiscountedPrice().toFixed(2) }}</p>
+<button [disabled]="!(product.inStock > 0)"> Buy Now</button>
+
+
+
+<!-- disabled,Hidden,Checked for this Html attribute string interplotion does not workin example {{product.inStock}} in this case we use property binding-->  

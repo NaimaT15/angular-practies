@@ -10,7 +10,9 @@ export class ProductListComponent {
     name:'ipohone x',
     price:755,
     color:'Black',
-    discount: 8.5
+    discount: 8.5,
+    inStock:10,
+    pImage: '/assets/R.png'
 
   }
   getDiscountedPrice(){
